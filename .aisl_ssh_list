@@ -1,0 +1,4 @@
+alias spc05_login='ssh spc-05@133.15.23.55'
+alias spc03_login='ssh aisl-spc03@133.15.23.76'
+alias micra_serv_login='ssh spc-05@133.15.23.162'
+

@@ -1,0 +1,6 @@
+# Retain bundle folder for vim plugins
+.vim/bundle/*
+!.vim/bundle/.gitkeep
+
+# Ignore backup files
+*~
