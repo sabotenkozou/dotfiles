@@ -145,3 +145,7 @@ export PYTHONPATH=~/kojima_ws/caffe_ws/affordance-net/caffe-affordance-net/pytho
 export TMUX_TMPDIR=/tmp
 alias run_rtsp_camera='cd ~/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
 alias run_rtsp_camera='cd ~/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
+export LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libatomic.so.1
+alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
+alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
+alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
