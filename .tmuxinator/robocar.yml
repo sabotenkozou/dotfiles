@@ -12,13 +12,13 @@ pre:
 
 
 windows:
-    - Coding:
-        layout: main-horizontal
-        panes:
-            - vim
     - Launch:
         layout: even-horizontal
         panes:
             - run_rtsp_camera
             - cd ../fake_gps_uploader/ && sudo python fake_gps_uploader_node.py
-            - cd SunFounder_PiCar-S/example
+            - cd my_picar/example
+    - Coding:
+        layout: main-horizontal
+        panes:
+            - vim
