@@ -143,9 +143,4 @@ alias dockeros_mode='export ROS_IP=172.17.0.1 export ROS_MASTER_URI=http://172.1
 export PYTHONPATH=~/kojima_ws/caffe_ws/affordance-net/caffe-affordance-net/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages
 
 export TMUX_TMPDIR=/tmp
-alias run_rtsp_camera='cd ~/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
-alias run_rtsp_camera='cd ~/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
-export LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libatomic.so.1
-alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
-alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
-alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264.sh'
+alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264_rpisrc.sh'
