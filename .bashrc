@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source ~/dotfiles/.ros_noetic_setup
+source ~/dotfiles/.ros_melodic_setup
 # source ~/dotfiles/.aisl_ssh_list
 # ulimit -c unlimited
 
@@ -146,3 +146,28 @@ export LD_LIBRARY_PATH=${CAFFE_HOME}/lib:${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
 export TMUX_TMPDIR=/tmp
 
 # alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264_rpisrc.sh'
+
+### PROXY setting
+# setting for Office365
+export USER_NAME="00009689"
+export USER_SMTP="denso-ten.com"
+export USER_DOMAIN="ad.denso-ten.com"
+export PROXY_ADDR="proxy.local.denso-ten.com:8080"
+
+# set wget/apt setting
+export PROXY_USER="${USER_NAME}%40${USER_SMTP}"
+
+# set pip proxy setting
+export PIP_PROXY="http://${USER_NAME}@${USER_SMTP}:${PROXY_PASS}@${PROXY_ADDR}"
+
+# set env proxy
+export FTP_PROXY="http://${PROXY_ADDR}"
+export HTTP_PROXY="http://${PROXY_ADDR}"
+export HTTPS_PROXY="http://${PROXY_ADDR}"
+export NO_PROXY="127.0.0.1"
+export ftp_proxy=${FTP_PROXY}
+export http_proxy=${HTTP_PROXY}
+export https_proxy=${HTTPS_PROXY}
+export no_proxy=${NO_PROXY}
+
+

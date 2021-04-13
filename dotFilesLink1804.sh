@@ -133,3 +133,4 @@ gconftool-2 --set --type string /apps/gnome-terminal/profiles/Default/font "Rict
 #sudo ln -s /opt/qt57/bin/qtcreator-wrapper /usr/local/bin/qtcreator
 
 
+sudo apt install xsel -y
