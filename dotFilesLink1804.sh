@@ -42,13 +42,8 @@ sudo apt-get install -y clang lldb-3.8
 
 
 
-#downgrade tmux to 1.8
-wget http://mirrors.kernel.org/ubuntu/pool/main/t/tmux/tmux_1.8-5_amd64.deb
-sha256sum tmux_1.8-5_amd64.deb
-sudo apt-get install -y ./tmux_1.8-5_amd64.deb
-echo "tmux hold" | sudo dpkg --set-selections
-sudo rm ./tmux_1.8-5_amd64.deb
-
+#install tmux
+sudo apt install -y tmux
 
 
 #available python2 command on 16.04

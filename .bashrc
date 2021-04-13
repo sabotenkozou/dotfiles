@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# source ~/.ros_setup
+source ~/dotfiles/.ros_noetic_setup
 # source ~/dotfiles/.aisl_ssh_list
 # ulimit -c unlimited
 
@@ -123,12 +123,13 @@ source ~/.tmuxinator/tmuxinator.bash
 #source ~/.tmuxautorun
 
 alias rosenv='env | grep ROS'
+alias sb='source ~/.bashrc'
 
 export PATH="$PATH:$HOME/bin"
 # for caffe python
-export CUDA_HOME=/usr/local/cuda
+# export CUDA_HOME=/usr/local/cuda
 #export CAFFE_HOME=/usr/local/caffe
-export PATH=${CAFFE_HOME}/bin:${CUDA_HOME}/bin:${PATH}
+# export PATH=${CAFFE_HOME}/bin:${CUDA_HOME}/bin:${PATH}
 export LD_LIBRARY_PATH=${CAFFE_HOME}/lib:${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
 #export PYTHONPATH=${CAFFE_HOME}/python:${PYTHONPATH}xport PYTHONPATH=~/caffe/python:$PYTHONPATH
 
@@ -136,11 +137,12 @@ export LD_LIBRARY_PATH=${CAFFE_HOME}/lib:${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
 
 
 
-export ROS_IP=133.15.23.76
-alias dockeros_mode='export ROS_IP=172.17.0.1 export ROS_MASTER_URI=http://172.17.0.1:11311 export PS1="\[\033[41;1;37m\]<dockeros>\[\033[0m\]\w$ "'
+# export ROS_IP=133.15.23.76
+# alias dockeros_mode='export ROS_IP=172.17.0.1 export ROS_MASTER_URI=http://172.17.0.1:11311 export PS1="\[\033[41;1;37m\]<dockeros>\[\033[0m\]\w$ "'
 
 #export ROS_MASTER_URI=http://172.17.0.1:11311
-export PYTHONPATH=~/kojima_ws/caffe_ws/affordance-net/caffe-affordance-net/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages
+# export PYTHONPATH=~/kojima_ws/caffe_ws/affordance-net/caffe-affordance-net/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/caffe/python:/home/aisl-spc03/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages
 
 export TMUX_TMPDIR=/tmp
-alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264_rpisrc.sh'
+
+# alias run_rtsp_camera='cd /home/pi/raspi_setup/raspi_rtsp_server/gst-rtsp-server/examples && ./run_h264_rpisrc.sh'
